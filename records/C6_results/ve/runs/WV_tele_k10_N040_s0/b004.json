@@ -1,0 +1,20 @@
+{
+ "method": "WV_tele",
+ "k": 10,
+ "n": 1000,
+ "steps": 40,
+ "branch": null,
+ "switch_sigma": 16.77988949856065,
+ "seconds": 492.1487228870392,
+ "net_points": 59000,
+ "cost_units": 59.0,
+ "cost_ratio": 0.7468354430379747,
+ "tag": "WV_tele_k10_N040_s0",
+ "batch": 4,
+ "seedset": 0,
+ "version": "C3-1.0",
+ "sigma_range": [
+  0.002000000000000003,
+  80.0
+ ]
+}

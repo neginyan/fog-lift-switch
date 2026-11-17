@@ -1,0 +1,19 @@
+{
+ "method": "M0",
+ "k": 0,
+ "n": 1000,
+ "steps": 40,
+ "branch": null,
+ "seconds": 644.2614126205444,
+ "net_points": 79000,
+ "cost_units": 79.0,
+ "cost_ratio": 1.0,
+ "tag": "M0_N040_s3",
+ "batch": 4,
+ "seedset": 3,
+ "version": "C3-1.0",
+ "sigma_range": [
+  0.002000000000000003,
+  80.0
+ ]
+}

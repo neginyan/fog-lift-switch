@@ -1,0 +1,5 @@
+# CPU verification and figures (python verify/verify_all.py)
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+# The Colab notebooks additionally use PyTorch and the official EDM code, which Colab provides / the notebooks fetch.
