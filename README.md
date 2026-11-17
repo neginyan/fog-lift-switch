@@ -1,11 +1,11 @@
 # When does the fog lift? — a switching rule fixed on synthetic worlds, tested by pre-registration on pretrained image diffusion models
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24301909.svg)](https://doi.org/10.5281/zenodo.24301909)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24301908.svg)](https://doi.org/10.5281/zenodo.24301908)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neginyan/fog-lift-switch/blob/main/notebooks/demo_colab.ipynb)
 [![verify](https://github.com/neginyan/fog-lift-switch/actions/workflows/verify.yml/badge.svg)](https://github.com/neginyan/fog-lift-switch/actions/workflows/verify.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Code, pre-registrations and run records for the paper **"When does the fog lift? A switching rule fixed on synthetic worlds, tested by pre-registration on pretrained image diffusion models"** (Taishi Namba, paper G3; preprint [doi:10.5281/zenodo.24301909](https://doi.org/10.5281/zenodo.24301909)).
+Code, pre-registrations and run records for the paper **"When does the fog lift? A switching rule fixed on synthetic worlds, tested by pre-registration on pretrained image diffusion models"** (Taishi Namba, paper G3; preprint [doi:10.5281/zenodo.24301908](https://doi.org/10.5281/zenodo.24301908)).
 
 ## In one paragraph
 
@@ -77,7 +77,7 @@ This work was carried out with AI assistance: Anthropic Claude, OpenAI ChatGPT, 
   title  = {When does the fog lift? A switching rule fixed on synthetic worlds, tested by pre-registration on pretrained image diffusion models},
   year   = {2026},
   note   = {Preprint},
-  doi    = {10.5281/zenodo.24301909}
+  doi    = {10.5281/zenodo.24301908}
 }
 ```
 
