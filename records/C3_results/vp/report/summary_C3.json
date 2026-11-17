@@ -1,0 +1,417 @@
+{
+ "version": "C3-1.0",
+ "prereg": {
+  "models": {
+   "vp": "edm-afhqv2-64x64-uncond-vp.pkl",
+   "ve": "edm-afhqv2-64x64-uncond-ve.pkl"
+  },
+  "hc_names": {
+   "vp": {
+    "U_env": [
+     "HC9",
+     "HC10"
+    ],
+    "U_min": [
+     "HC13",
+     "HC14"
+    ]
+   },
+   "ve": {
+    "U_env": [
+     "HC11",
+     "HC12"
+    ],
+    "U_min": [
+     "HC15",
+     "HC16"
+    ]
+   }
+  },
+  "gpu": "NVIDIA L4 (both nets)",
+  "dataset_n_images": 15803,
+  "results_layout": "C3_results/{vp,ve}/ (net-specific); data and moments shared in C3_results/",
+  "fid_ref": "afhqv2-64x64.npz",
+  "dataset": "afhqv2-64x64 (StarGAN v2 download.sh afhq-v2-dataset → EDM dataset_tool.py --resolution=64x64)",
+  "img_shape": [
+   3,
+   64,
+   64
+  ],
+  "steps": 40,
+  "sampler_sigma_min": 0.002,
+  "sampler_sigma_max": 80.0,
+  "sampler_rho": 7.0,
+  "batch": 1000,
+  "n_images": 5000,
+  "seedset_main": 0,
+  "seedset_noise": 1,
+  "wv_sigma_targets": [
+   40.0,
+   20.0,
+   10.0,
+   5.0,
+   2.5,
+   1.25,
+   0.6
+  ],
+  "wv_grid_order": "descending k, stop at the first k with FID <= 1.03 x FID(M0)",
+  "fid_rel_tol": 0.03,
+  "cost_max": 0.85,
+  "grid_fid_rel": 0.03,
+  "grid_cost_margin": 0.1,
+  "umin_c_min": 2.38,
+  "subset_frac": 0.05,
+  "time_thin": 1,
+  "b22_rule": "U_env (B22_rule_for_C.md section 3): W_k = {i <= k : ln sigma_i <= ln sigma_k + DELTA}, extended to the last M_MIN evaluations; X_i = max(u over W_i); P_k = min(X_0..X_{a_k - 1}); switch at the first k with a_k >= 1 and min(u over W_k) >= C x P_k; u = median of u_i over finite points; T1P5; before the switch all points advance with D_G",
+  "b22_constants": {
+   "DELTA": 0.3,
+   "C": 1.5150000000000001,
+   "M_MIN": 3,
+   "window_tol": 1e-12,
+   "source": "B22/results/rule_constants_B22.json (C = 1.01 x 1.5)"
+  },
+  "uenv_window_sizes_40": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   5,
+   6,
+   5,
+   6,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "uenv_first_decidable_eval_40": 5
+ },
+ "b22": {
+  "installed": true,
+  "name": "U_env",
+  "make_rule": true,
+  "stat_fn": true,
+  "time_thin": 1,
+  "frac": 0.05,
+  "constants": {
+   "DELTA": 0.3,
+   "C": 1.5150000000000001,
+   "M_MIN": 3
+  },
+  "source": "B22_rule_for_C.md"
+ },
+ "results": {
+  "M0_N040_s0": {
+   "method": "M0",
+   "k": 0,
+   "steps": 40,
+   "seedset": 0,
+   "n_batches_done": 5,
+   "complete": true,
+   "cost_ratio_mean": 1.0,
+   "seconds_total": 3158.70539021492,
+   "fid": 3.7732486840072132
+  },
+  "M0_N040_s1": {
+   "method": "M0",
+   "k": 0,
+   "steps": 40,
+   "seedset": 1,
+   "n_batches_done": 5,
+   "complete": true,
+   "cost_ratio_mean": 1.0,
+   "seconds_total": 3158.8806302547455,
+   "fid": 3.7012259572601116
+  },
+  "U_env_N040_s0": {
+   "method": "B22",
+   "k": 0,
+   "steps": 40,
+   "seedset": 0,
+   "n_batches_done": 5,
+   "complete": true,
+   "cost_ratio_mean": 0.7667088607594937,
+   "seconds_total": 2585.949000597,
+   "switch_sigmas": [
+    16.77988949856065,
+    14.054981495701497,
+    16.77988949856065,
+    19.945628016991925,
+    14.054981495701497
+   ],
+   "switch_sigma_median": 16.77988949856065,
+   "fid": 3.7635858190548244,
+   "c_min": null,
+   "b22_name": "U_env"
+  },
+  "U_min_c2.38_N040_s0": {
+   "method": "U_min",
+   "k": 0,
+   "steps": 40,
+   "seedset": 0,
+   "n_batches_done": 5,
+   "complete": true,
+   "cost_ratio_mean": 0.7474683544303797,
+   "seconds_total": 2538.551639318466,
+   "switch_sigmas": [
+    14.054981495701497,
+    11.71851402033654,
+    16.77988949856065,
+    14.054981495701497,
+    14.054981495701497
+   ],
+   "switch_sigma_median": 14.054981495701497,
+   "fid": 3.7827750609493944,
+   "c_min": 2.38,
+   "b22_name": null
+  },
+  "WV_tele_k13_N040_s0": {
+   "method": "WV_tele",
+   "k": 13,
+   "steps": 40,
+   "seedset": 0,
+   "n_batches_done": 5,
+   "complete": true,
+   "cost_ratio_mean": 0.6708860759493671,
+   "seconds_total": 2126.7104680538177,
+   "switch_sigmas": [
+    9.723201355260132,
+    9.723201355260132,
+    9.723201355260132,
+    9.723201355260132,
+    9.723201355260132
+   ],
+   "switch_sigma_median": 9.723201355260132,
+   "fid": 3.8468974391447084
+  },
+  "WV_tele_k16_N040_s0": {
+   "method": "WV_tele",
+   "k": 16,
+   "steps": 40,
+   "seedset": 0,
+   "n_batches_done": 5,
+   "complete": true,
+   "cost_ratio_mean": 0.5949367088607594,
+   "seconds_total": 1886.8150527477264,
+   "switch_sigmas": [
+    5.380004445858736,
+    5.380004445858736,
+    5.380004445858736,
+    5.380004445858736,
+    5.380004445858736
+   ],
+   "switch_sigma_median": 5.380004445858736,
+   "fid": 4.8475866742263936
+  },
+  "WV_tele_k20_N040_s0": {
+   "method": "WV_tele",
+   "k": 20,
+   "steps": 40,
+   "seedset": 0,
+   "n_batches_done": 5,
+   "complete": true,
+   "cost_ratio_mean": 0.49367088607594944,
+   "seconds_total": 1566.8990485668182,
+   "switch_sigmas": [
+    2.2404397589312026,
+    2.2404397589312026,
+    2.2404397589312026,
+    2.2404397589312026,
+    2.2404397589312026
+   ],
+   "switch_sigma_median": 2.2404397589312026,
+   "fid": 16.27104869123229
+  },
+  "WV_tele_k22_N040_s0": {
+   "method": "WV_tele",
+   "k": 22,
+   "steps": 40,
+   "seedset": 0,
+   "n_batches_done": 5,
+   "complete": true,
+   "cost_ratio_mean": 0.4430379746835443,
+   "seconds_total": 1407.0791788101196,
+   "switch_sigmas": [
+    1.3823679566485092,
+    1.3823679566485092,
+    1.3823679566485092,
+    1.3823679566485092,
+    1.3823679566485092
+   ],
+   "switch_sigma_median": 1.3823679566485092,
+   "fid": 36.853255525283224
+  },
+  "WV_tele_k25_N040_s0": {
+   "method": "WV_tele",
+   "k": 25,
+   "steps": 40,
+   "seedset": 0,
+   "n_batches_done": 5,
+   "complete": true,
+   "cost_ratio_mean": 0.3670886075949367,
+   "seconds_total": 1167.052446603775,
+   "switch_sigmas": [
+    0.6253984639558781,
+    0.6253984639558781,
+    0.6253984639558781,
+    0.6253984639558781,
+    0.6253984639558781
+   ],
+   "switch_sigma_median": 0.6253984639558781,
+   "fid": 91.28525076015077
+  }
+ },
+ "judgement": {
+  "U_env_a": "支持",
+  "U_env_b": "支持",
+  "detail_B22": {
+   "rule": "U_env_N040_s0",
+   "fid_M0": 3.7732486840072132,
+   "fid_tol": 3.88644614452743,
+   "fid_rule": 3.7635858190548244,
+   "cost_rule": 0.7667088607594937,
+   "switch_sigmas": [
+    16.77988949856065,
+    14.054981495701497,
+    16.77988949856065,
+    19.945628016991925,
+    14.054981495701497
+   ],
+   "a": "支持",
+   "WV_tele_best": {
+    "k": 13,
+    "fid": 3.8468974391447084,
+    "cost": 0.6708860759493671,
+    "sigma": 9.723201355260132
+   },
+   "b": "支持",
+   "fid_M0_other_seeds": 3.7012259572601116,
+   "fid_seed_spread": 0.07202272674710164,
+   "within_seed_spread": true,
+   "status": "判定済み"
+  },
+  "U_min_a": "支持",
+  "U_min_b": "支持",
+  "detail_U_min": {
+   "rule": "U_min_c2.38_N040_s0",
+   "fid_M0": 3.7732486840072132,
+   "fid_tol": 3.88644614452743,
+   "fid_rule": 3.7827750609493944,
+   "cost_rule": 0.7474683544303797,
+   "switch_sigmas": [
+    14.054981495701497,
+    11.71851402033654,
+    16.77988949856065,
+    14.054981495701497,
+    14.054981495701497
+   ],
+   "a": "支持",
+   "WV_tele_best": {
+    "k": 13,
+    "fid": 3.8468974391447084,
+    "cost": 0.6708860759493671,
+    "sigma": 9.723201355260132
+   },
+   "b": "支持",
+   "fid_M0_other_seeds": 3.7012259572601116,
+   "fid_seed_spread": 0.07202272674710164,
+   "within_seed_spread": true,
+   "status": "判定済み"
+  },
+  "net": "vp",
+  "HC9": "支持",
+  "HC10": "支持",
+  "HC13": "支持",
+  "HC14": "支持"
+ },
+ "figures": [
+  "fig1_u_traces_switch.png",
+  "fig2_fid_vs_cost.png"
+ ],
+ "extra": {
+  "edm_commit": "008a4e5316c8e3bfe61a62f874bddba254295afb",
+  "gpu": "NVIDIA L4",
+  "torch": "2.14.1+cu130",
+  "net_info": {
+   "url": "https://nvlabs-fi-cdn.nvidia.com/edm/pretrained/edm-afhqv2-64x64-uncond-vp.pkl",
+   "class": "EDMPrecond",
+   "img_resolution": 64,
+   "sigma_min": 0.0,
+   "sigma_max": Infinity,
+   "sigma_data": 0.5,
+   "sampler_sigma_range": [
+    0.002,
+    80.0
+   ],
+   "round_sigma_max_change": 0.0,
+   "net": "vp"
+  }
+ }
+}
