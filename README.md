@@ -43,7 +43,7 @@ python verify/verify_all.py        # about 30 s on a laptop CPU; no GPU, no netw
 
 It recomputes, from `records/`, every pre-registered decision (HC1–HC25), every number in Tables 1–3 of the paper, and every switching time (by replaying both rules on the recorded signal traces, with an independent re-implementation of each rule). It also checks the SHA-256 of the rule code and of every pre-registration, that the code cells of the notebooks are the code in this repository, and exact properties of the Gaussian denoiser and teleportation, each with a power check (a deliberately wrong version must fail). It also runs Part 1 of the demo notebook on CPU and the demo's live pipeline with a small synthetic network. It recomputes the `U_env` window table from the schedules and checks that `fast_gauss` reproduces the switches, the signal and the samples of the implementation used for the runs, and recomputes the measured timings and the wall-clock ranges quoted in the paper. It runs on every push via GitHub Actions.
 
-FID values are taken from the run records, because the Inception features were not stored.
+The Inception feature arrays were stored in the working environment of the runs but are not included in the repository (size); the FID values are taken from the run records.
 
 ## Try it
 
