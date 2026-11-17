@@ -1,0 +1,16 @@
+{
+ "method": "WV_tele",
+ "k": 11,
+ "n": 1000,
+ "steps": 18,
+ "branch": null,
+ "switch_sigma": 0.5853481231945422,
+ "seconds": 85.96306109428406,
+ "net_points": 13000,
+ "cost_units": 13.0,
+ "cost_ratio": 0.37142857142857144,
+ "tag": "WV_tele_k11_N018_s0",
+ "batch": 2,
+ "seedset": 0,
+ "version": "C1-1.0"
+}
