@@ -1,0 +1,68 @@
+{
+ "vp": {
+  "M0_recorded_seconds": 631.5844416618347,
+  "gauss_phase_current_U_min": [
+   41.60053277015686,
+   21
+  ],
+  "gauss_phase_fast_U_min": [
+   11.794483661651611,
+   21
+  ],
+  "gauss_phase_fast_U_env": [
+   10.763092756271362,
+   19
+  ],
+  "fast_full_U_min_seconds": 475.80526876449585,
+  "switch_call": {
+   "U_min fast": 21,
+   "U_min recorded": 21,
+   "U_env fast (eval index)": 19,
+   "U_env recorded (eval index)": 19
+  },
+  "u_trace_max_rel_diff": 8.767678845092375e-15,
+  "images_vs_record": {
+   "max_abs_diff_0_255": 1,
+   "pixels_differing_fraction": 0.00024088541666666667
+  },
+  "wall_ratio_to_M0": {
+   "current (pre + post)": 0.8005442891256612,
+   "fast (measured full run)": 0.7533517885788157,
+   "recorded C3 U_min run": 0.8052743478939289
+  },
+  "cost_ratio": 0.7474683544303797
+ },
+ "ve": {
+  "M0_recorded_seconds": 648.4850857257843,
+  "gauss_phase_current_U_min": [
+   42.037307024002075,
+   21
+  ],
+  "gauss_phase_fast_U_min": [
+   12.259266376495361,
+   21
+  ],
+  "gauss_phase_fast_U_env": [
+   12.295263528823853,
+   21
+  ],
+  "fast_full_U_min_seconds": 492.34936451911926,
+  "switch_call": {
+   "U_min fast": 21,
+   "U_min recorded": 21,
+   "U_env fast (eval index)": 21,
+   "U_env recorded (eval index)": 21
+  },
+  "u_trace_max_rel_diff": 1.2933044045038052e-14,
+  "images_vs_record": {
+   "max_abs_diff_0_255": 2,
+   "pixels_differing_fraction": 0.000199462890625
+  },
+  "wall_ratio_to_M0": {
+   "current (pre + post)": 0.8051494423842627,
+   "fast (measured full run)": 0.7592300507082318,
+   "recorded C3 U_min run": 0.8049460484601249
+  },
+  "cost_ratio": 0.7474683544303797
+ }
+}

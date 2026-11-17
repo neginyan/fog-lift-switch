@@ -1,0 +1,15 @@
+{
+ "method": "M0",
+ "k": 0,
+ "n": 1000,
+ "steps": 18,
+ "branch": null,
+ "seconds": 231.6996293067932,
+ "net_points": 35000,
+ "cost_units": 35.0,
+ "cost_ratio": 1.0,
+ "tag": "M0_N018_s1",
+ "batch": 4,
+ "seedset": 1,
+ "version": "C1-1.0"
+}
