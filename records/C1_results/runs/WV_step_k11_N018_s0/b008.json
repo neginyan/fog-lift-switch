@@ -1,0 +1,16 @@
+{
+ "method": "WV_step",
+ "k": 11,
+ "n": 1000,
+ "steps": 18,
+ "branch": null,
+ "switch_sigma": 0.5853481231945422,
+ "seconds": 89.51163148880005,
+ "net_points": 13000,
+ "cost_units": 13.0,
+ "cost_ratio": 0.37142857142857144,
+ "tag": "WV_step_k11_N018_s0",
+ "batch": 8,
+ "seedset": 0,
+ "version": "C1-1.0"
+}
